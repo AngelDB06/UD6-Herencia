@@ -1,49 +1,51 @@
 package ej1;
 
 public class Persona {
-        String NIF="111111111A";
-        int altura=175, edad=25;
+        private String NIF;
+        private int altura, edad;
 
+        public Persona(){
+            NIF="111111111A";
+            altura=175;
+            edad=25;
+        }
+        
         public Persona(String N, int a, int e){
             NIF=N;
             altura=a;
             edad=e;
-
-            if (N==null) {
-                NIF="11111111A";
-            }
-
-            if (a==0) {
-                altura=175;
-            }
-
-            if (e==0) {
-                edad=25;
-            }
         }
 
-        String getNIF(){
+        public String getNIF(){
             return NIF;
         }
 
-        int getaltura(){
+        public int getaltura(){
             return altura;
         }
 
-        int getedad(){
+        public int getedad(){
             return edad;
         }
 
-        void setNIF(String N){
+        public void setNIF(String N){
             NIF=N;
         }
 
-        void setaltura(int a){
+        public void setaltura(int a){
             altura=a;
         }
 
-        void setedad(int e){
+        public void setedad(int e){
             edad=e;
+        }
+
+        public void comer(){
+            System.out.println("Estoy comiendo");
+        }
+
+        public void hablar(){
+            System.out.println("Puedo hablar");
         }
 
         @Override
