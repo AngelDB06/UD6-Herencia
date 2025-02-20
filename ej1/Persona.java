@@ -47,7 +47,7 @@ public class Persona {
         public void hablar(){
             System.out.println("Puedo hablar");
         }
-
+        
         @Override
         public String toString(){
             return getNIF()+" "+getaltura()+" "+getedad();
