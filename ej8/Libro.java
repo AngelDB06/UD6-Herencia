@@ -5,6 +5,7 @@ public class Libro extends Publicacion implements Prestable {
     
     public Libro(int ISBN, int año, String Titulo){
         super(ISBN, año, Titulo);
+        this.prestado=false;
     }
 
     public void presta(){
@@ -25,6 +26,6 @@ public class Libro extends Publicacion implements Prestable {
 
     @Override
     public String toString() {
-        return super.toString()+" "+(" "+this.prestado != null ? "Prestado" : "No prestado");
+        return super.toString()+" "+(this.prestado ? "Prestado" : "No prestado");
     }
 }
