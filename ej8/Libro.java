@@ -25,6 +25,6 @@ public class Libro extends Publicacion implements Prestable {
 
     @Override
     public String toString() {
-        return super.toString()+(" "+this.prestado != null ? "Prestado" : "No prestado");
+        return super.toString()+" "+(" "+this.prestado != null ? "Prestado" : "No prestado");
     }
 }

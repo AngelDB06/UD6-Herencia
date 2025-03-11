@@ -12,6 +12,17 @@ public class Biblioteca {
     System.out.println(libro3);
     System.out.println(revista1);
     System.out.println(revista2);
-    
+    libro2.presta();
+    if (libro2.estaPrestado()) {
+        System.out.println("El libro está prestado");
+    }
+    libro2.presta();
+    libro2.devuelve();
+    if (libro2.estaPrestado()) {
+        System.out.println("El libro está prestado");
+    }
+    libro3.presta();
+    System.out.println(libro2);
+    System.out.println(libro3);
     }   
 }
