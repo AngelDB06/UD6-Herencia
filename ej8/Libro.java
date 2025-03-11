@@ -10,7 +10,7 @@ public class Libro extends Publicacion implements Prestable {
 
     public void presta(){
         if (this.estaPrestado()) {
-            System.out.println("El libro está prestado");
+            System.out.println("Lo siento, el libro ya está prestado");
         } else {
             this.prestado= true;
         }
