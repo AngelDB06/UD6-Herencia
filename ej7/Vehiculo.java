@@ -2,7 +2,7 @@ package ej7;
 
 public abstract class Vehiculo {
     int vehiculosCreados;
-    private static int kilometrosTotales;
+    protected static int kilometrosTotales;
     protected int kilometrosRecorridos;
 
     public Vehiculo() {
@@ -15,11 +15,11 @@ public abstract class Vehiculo {
         kilometrosTotales += km;
     }
 
-    public static int getkilometrosTotales(){
-        return kilometrosTotales;
+    public static void getkilometrosTotales(){
+        System.out.println(kilometrosTotales);
     }
 
-    public int getkilometrosRecorridos(){
-        return kilometrosRecorridos;
+    public void getkilometrosRecorridos(){
+        System.out.println(this.kilometrosRecorridos);
     }
 }
